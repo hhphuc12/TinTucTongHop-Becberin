@@ -5,8 +5,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.phuc.tintuctonghop.fragments.FragmentDanTri;
-
 /**
  * Created by Thanh An on 12/05/2017.
  */
@@ -49,14 +47,7 @@ public class AdapterDanTri extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-
-        for(int i = 0; i < link.length; i++){
-            if(i == position) {
-                FragmentDanTri tab = new FragmentDanTri();
-                tab.setLink(link[i]);
-                return tab;
-            }
-        }
+        //create
         return null;
     }
 
