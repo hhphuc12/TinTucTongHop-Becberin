@@ -1,4 +1,4 @@
-package com.phuc.tintuctonghop.pageradapter;
+package com.phuc.tintuctonghop;
 
 /**
  * Created by Thanh An on 13/05/2017.
