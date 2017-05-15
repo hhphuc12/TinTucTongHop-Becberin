@@ -4,11 +4,10 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-
 import com.phuc.tintuctonghop.fragments.FragmentVnExpress;
 
 /**
- * Created by Phuc on 5/5/2017.
+ * Created by Thanh An on 11/05/2017.
  */
 
 public class AdapterVnExpress extends FragmentStatePagerAdapter {

@@ -9,6 +9,13 @@ import org.w3c.dom.NodeList;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 
+<<<<<<< HEAD
+=======
+/**
+ * Created by ThanhAn on 14/05/2017.
+ */
+
+>>>>>>> 77bd9a66a06ab5b9155674a50fda0d0b303f8a3f
 class ReadData extends AsyncTask<String, Integer, String> {
     MyHelper helper = new MyHelper ();
     ArrayList<String> test = new ArrayList<>();
@@ -53,4 +60,8 @@ class ReadData extends AsyncTask<String, Integer, String> {
     public ArrayList<String> getTest(){
         return test;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 77bd9a66a06ab5b9155674a50fda0d0b303f8a3f

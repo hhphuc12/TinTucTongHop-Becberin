@@ -24,6 +24,13 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+<<<<<<< HEAD
+=======
+/**
+ * Created by Thanh An on 13/05/2017.
+ */
+
+>>>>>>> 77bd9a66a06ab5b9155674a50fda0d0b303f8a3f
 public class FragmentVnExpress extends Fragment {
     ArrayList<News> newses = new ArrayList<>();
     ListNewsAdapter adapter;
