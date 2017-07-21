@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TinTucTongHop-Becberin.iml" filepath="$PROJECT_DIR$/TinTucTongHop-Becberin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TinTucTongHop-Becberin.iml" filepath="$PROJECT_DIR$/TinTucTongHop-Becberin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TinTucTongHop.iml" filepath="$PROJECT_DIR$/TinTucTongHop.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import java.net.InetAddress;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
@@ -57,15 +58,12 @@ public class MainActivity extends AppCompatActivity
         arr.add(new NavigationItem("Dân trí", R.drawable.icon_dantri));
         arr.add(new NavigationItem("Thanh niên", R.drawable.icon_thanhnien));
         arr.add(new NavigationItem("Người đưa tin", R.drawable.icon_ndt));
-        arr.add(new NavigationItem("BBC News", R.drawable.icon_abc));
+        arr.add(new NavigationItem("ABC News", R.drawable.icon_abc));
         lv = (ListView) findViewById(R.id.listview);
         MyNavigationAdapter adapter  = new MyNavigationAdapter(this, R.layout.navigation_item, arr);
         lv.setAdapter(adapter);
 
-        getSupportActionBar().setTitle(arr.get(0).getArticle());
-        NewsFragment fragment = new NewsFragment();
-        fragment.setId(0);
-        callNewsFragment(fragment);
+        initGUI();
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -125,5 +123,30 @@ public class MainActivity extends AppCompatActivity
         FragmentTransaction transaction = manager.beginTransaction();
         transaction.replace(R.id.frame_layout, fragment);
         transaction.commit();
+    }
+
+    public boolean isInternetAvailable() {
+        try {
+            InetAddress ipAddr = InetAddress.getByName("google.com");
+            return !ipAddr.equals("");
+
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public void initGUI(){
+        if(this.isInternetAvailable()){
+            getSupportActionBar().setTitle(arr.get(0).getArticle());
+            NewsFragment fragment = new NewsFragment();
+            fragment.setId(0);
+            callNewsFragment(fragment);
+        }
+        else {
+            getSupportActionBar().setTitle(arr.get(0).getArticle());
+            NewsFragment fragment = new NewsFragment();
+            fragment.setId(0);
+            callNewsFragment(fragment);
+        }
     }
 }

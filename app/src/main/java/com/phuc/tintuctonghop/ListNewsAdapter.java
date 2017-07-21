@@ -13,11 +13,7 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 /**
-<<<<<<< HEAD
  * Created by Phuc on 4/1/2017.
-=======
- * Created by Thanh An on 13/05/2017.
->>>>>>> 77bd9a66a06ab5b9155674a50fda0d0b303f8a3f
  */
 
 public class ListNewsAdapter extends ArrayAdapter<News> {

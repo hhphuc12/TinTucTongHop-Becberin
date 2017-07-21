@@ -1,9 +1,6 @@
 package com.phuc.tintuctonghop;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 77bd9a66a06ab5b9155674a50fda0d0b303f8a3f
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -20,13 +17,6 @@ import com.phuc.tintuctonghop.pageradapter.AdapterNdt;
 import com.phuc.tintuctonghop.pageradapter.AdapterThanhNien;
 import com.phuc.tintuctonghop.pageradapter.AdapterVnExpress;
 
-<<<<<<< HEAD
-=======
-/**
- * Created by ThanhAn on 13/05/2017.
- */
-
->>>>>>> 77bd9a66a06ab5b9155674a50fda0d0b303f8a3f
 public class NewsFragment extends Fragment {
 
     TabLayout tabLayout;
@@ -113,7 +103,3 @@ public class NewsFragment extends Fragment {
         }
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 77bd9a66a06ab5b9155674a50fda0d0b303f8a3f
